@@ -79,6 +79,17 @@ jobs:
           ls -la
           ls -la model/
 
+      - name: Download model artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: trained-model
+          path: model/
+
+      - name: List directory
+        run: |
+          ls -la
+          ls -la model/
+
       # - name: Set up Docker Buildx
       #   uses: docker/setup-buildx-action@v2
 
