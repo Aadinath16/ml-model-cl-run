@@ -76,8 +76,6 @@ jobs:
           git tag
           echo "Showing latest tag:"
           git describe --tags --abbrev=0 || echo "No tags found"
-          ls -la
-          ls -la model/
 
       - name: Download model artifact
         uses: actions/download-artifact@v4
