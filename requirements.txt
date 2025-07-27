@@ -1,0 +1,9 @@
+flask
+scikit-learn
+numpy
+joblib
+gunicorn
+pytest
+requests
+pytest-cov
+bandit==1.7.7
